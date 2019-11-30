@@ -9,7 +9,7 @@ function! s:source() abort
   if !filereadable(cache_path)
     return ['File does not exist.']
   endif
-  return readfile(cache_path)
+  return filter(readfile(cache_path), { i, x -> filereadable(x) })
 endfunction
 
 let s:filelist = {}
