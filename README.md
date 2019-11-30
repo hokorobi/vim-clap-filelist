@@ -5,11 +5,6 @@
 
 ## Usage
 
-```vim: vimrc
-" e.g. CtrlP MRU cache file
-let g:clap_filelist_file = '/path/to/filelist/file'
-```
-
 ```vim
-:Clap filelist
+:Clap filelist /path/to/file
 ```
